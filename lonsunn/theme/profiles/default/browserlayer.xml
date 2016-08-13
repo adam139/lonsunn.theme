@@ -1,0 +1,10 @@
+<layers>
+    
+    <!-- Enable the Diazo960 Theme layer when installed -->
+    
+    <layer
+        name="lonsunn.theme"
+        interface="lonsunn.theme.interfaces.IThemeSpecific"
+        />
+
+</layers>

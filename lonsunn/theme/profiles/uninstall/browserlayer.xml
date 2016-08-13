@@ -1,0 +1,11 @@
+<layers>
+    
+    <!-- Disable the Theme layer when uninstalled -->
+    
+    <layer
+        name="lonsunn.theme"
+        interface="lonsunn.theme.browser.interfaces.IThemeSpecific"
+        remove="True"
+        />
+
+</layers>
