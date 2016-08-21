@@ -20,20 +20,16 @@
     <!-- Don't use Plone icons, use the theme's -->
     <drop css:content="head link[rel='apple-touch-icon']" />
     <drop css:content="head link[rel='shortcut icon']" />
+    <drop css:content="head meta[name='generator']" />
     <!-- CSS -->
     <after css:theme-children="head" css:content="head link" />
     <!-- Script -->
 
     <after css:theme-children="head" css:content="head script" />
- <!--	<after css:theme-children="head">
- 		<script>
- 			require = undefined
- 			define = undefined
- 		</script>
- 	</after>
- -->
-   	
+    <replace css:theme-children="#language" css:content="#portal-languageselector" />
+
   </rules>
+ 
 
   <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
   <copy attributes="*" css:content="body" css:theme="body" />
@@ -47,7 +43,7 @@
 <!-- global search  -->
 	<copy css:theme="#topsearchbox" css:content="#portal-searchbox form" attributes="action"/>
 	<copy css:theme="#topsearchbox" css:content="#portal-searchbox form" attributes="data-pat-livesearch"/>	
-    <copy css:theme="#topsearchbox .search-query" css:content="#portal-searchbox form .searchField" attributes="placeholder"/>
+    <copy css:theme="#searchGadget" css:content="#portal-searchbox form .searchField" attributes="placeholder"/>
     <copy css:theme="#topsearchbox button" css:content="#portal-searchbox form .searchButton" attributes="value"/>       
 <!-- anonymous action -->
 <!--  <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />

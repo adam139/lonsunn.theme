@@ -4076,15 +4076,14 @@ a.plone-toolbar-logo {
   }
 }
 #portal-footer-wrapper {
-  padding: 30px 15px;
+  padding: 20px 15px;
   background-color: #2e3133;
   color: #cccccc;
   text-align: center;
   clear: both;
 }
 #portal-footer-wrapper p {
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 28px;
+  padding-bottom: 15px;
 }
 #portal-footer-wrapper abbr,
 #portal-footer-wrapper ul {
@@ -4790,4 +4789,4 @@ body.template-logged_out #content-core .portletFooter {
 #search-filter input {
   margin-right: 0.5rem;
 }
-/*# sourceMappingURL=++theme++xsgs.theme/less/barceloneta-compiled.css.map */
+/*# sourceMappingURL=++theme++lonsunn.theme/less/barceloneta-compiled.css.map */
